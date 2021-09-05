@@ -6,8 +6,10 @@ void menu();
 void easylevel();
 void mediumlevel();
 void hardlevel();
-int no,choice,numguesses=1,guess;
+
+int no,choice,numguesses=1,guess; //Global Variable declared
 int permission=1;
+
 int main()
 {
     menu();  
@@ -15,8 +17,8 @@ int main()
 }
 void menu()
 {
-    system("cls");
-    system("COLOR 70");
+    system("cls");.  //Clear screen
+    system("COLOR 70");. //change foreground and background color
     printf("\t\t\tCHOOSE LEVEL AND START THE GAME\n\n");
     printf("\n\t\t\t1.  Easy Level Between 1 to 100\n");
     printf("\n\t\t\t2.  Medium Level Between 1 to 300\n");
@@ -44,8 +46,8 @@ void menu()
 }
 void easylevel()
     {
-        system("cls");
-        system("COLOR 0b"); 
+        system("cls");.        // Clear screen
+        system("COLOR 0b");   //change foreground and background color
         printf("\t\t\t*****************");
         printf("\n\t\t\tP L A Y G A M E ");
         printf("\n\t\t\t*****************");
